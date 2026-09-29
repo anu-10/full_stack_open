@@ -10,7 +10,8 @@ sequenceDiagram
 
     Note right of browser: User enters text 'test' in input field and clicks save button.
     browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/notes/new_note
-    Note left of server: Server stores the latest note and responds with code 302 causing a URL redirect.
+    Note right of browser: Payload contains note with application/json header
+    Note left of server: Server stores the latest note and responds with code 201 and returns {"message":"note created"}
 
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
     activate server
