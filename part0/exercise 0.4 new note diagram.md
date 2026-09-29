@@ -1,3 +1,4 @@
+```mermaid
 sequenceDiagram
     participant browser
     participant server
@@ -15,5 +16,4 @@ sequenceDiagram
     activate server
     server-->>browser: [..., 98 : {content: 'i love food', date: '2026-09-28T18:33:20.762Z'}, 99: {content: 'test', date: '2026-09-28T18:44:26.289Z'}]
     deactivate server
-    
-    
+```
